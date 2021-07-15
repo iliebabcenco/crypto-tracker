@@ -1,10 +1,10 @@
-import DetailedCurrency from '../containers/DetailedCurrency';
+import CurrenciesContainer from '../containers/CurrenciesContainer';
 import SearchForm from './SearchForm';
 
 const App = () => (
   <div className="App">
     <SearchForm />
-    <DetailedCurrency />
+    <CurrenciesContainer />
   </div>
 );
 
