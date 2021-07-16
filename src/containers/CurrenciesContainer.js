@@ -15,7 +15,6 @@ const CurrenciesContainer = () => {
     currencies = currencies.filter((c) => c.name.toLowerCase().startsWith(filterPattern)
       || c.symbol.toLowerCase().startsWith(filterPattern));
   }
-  console.log(useSelector((state) => state));
   return (
 
     <div>

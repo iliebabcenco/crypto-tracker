@@ -44,9 +44,6 @@ export default function currencyReducer(state = initialState, action) {
       };
 
     case CHANGE_FILTER: {
-      console.log(action);
-      console.log(state);
-
       return {
         ...state,
         pattern: action.filter.toLowerCase(),
