@@ -13,7 +13,6 @@ const fetchCurrencies = () => (dispatch) => {
     .then(handleErrors)
     .then((res) => res.json())
     .then((json) => {
-      console.log(json);
       dispatch(fetchCurrencySuccess(json));
       return json;
     })

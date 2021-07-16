@@ -1,17 +1,21 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
 import fetchCurrencies from '../api/fetcher';
 import Currency from '../components/Currency';
-import DetailedCurrency from './DetailedCurrency';
 
 const CurrenciesContainer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCurrencies());
-  }, [DetailedCurrency]);
-  const currencies = useSelector((state) => state.items);
+  }, []);
+  let currencies = useSelector((state) => state.items);
+  const filterPattern = useSelector((state) => state.pattern);
+  if (filterPattern) {
+    currencies = currencies.filter((c) => c.name.toLowerCase().startsWith(filterPattern)
+      || c.symbol.toLowerCase().startsWith(filterPattern));
+  }
+  console.log(useSelector((state) => state));
   return (
 
     <div>

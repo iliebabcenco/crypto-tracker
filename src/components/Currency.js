@@ -7,7 +7,6 @@ import '../styles/Currency.css';
 const Currency = ({ currency }) => {
   const dispatch = useDispatch();
   const handleClickGotoCurrency = (currency) => dispatch({ type: 'SHOW_CURRENCY', currency });
-  console.log(currency);
   return (
     <div>
       <img src={currency.logo_url} alt="logo" className="cur-logo" />

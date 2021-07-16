@@ -3,6 +3,7 @@ import {
   FETCH_CURRENCY_SUCCESS,
   FETCH_CURRENCY_FAILURE,
   SHOW_CURRENCY,
+  CHANGE_FILTER,
 } from '../actions/currencyActions';
 
 const initialState = {
@@ -42,6 +43,15 @@ export default function currencyReducer(state = initialState, action) {
         currency: action.currency,
       };
 
+    case CHANGE_FILTER: {
+      console.log(action);
+      console.log(state);
+
+      return {
+        ...state,
+        pattern: action.filter.toLowerCase(),
+      };
+    }
     default: {
       return state;
     }
