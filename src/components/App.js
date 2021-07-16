@@ -1,10 +1,10 @@
-import CurrenciesContainer from '../containers/CurrenciesContainer';
 import SearchForm from './SearchForm';
+import Routes from '../routes/Routes';
 
 const App = () => (
   <div className="App">
     <SearchForm />
-    <CurrenciesContainer />
+    <Routes />
   </div>
 );
 

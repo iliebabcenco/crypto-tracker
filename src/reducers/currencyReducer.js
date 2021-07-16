@@ -2,6 +2,7 @@ import {
   FETCH_CURRENCY_BEGIN,
   FETCH_CURRENCY_SUCCESS,
   FETCH_CURRENCY_FAILURE,
+  SHOW_CURRENCY,
 } from '../actions/currencyActions';
 
 const initialState = {
@@ -32,6 +33,13 @@ export default function currencyReducer(state = initialState, action) {
         loading: false,
         error: action.payload.error,
         items: [],
+      };
+    case SHOW_CURRENCY:
+      return {
+        ...state,
+        loading: false,
+        items: action.currencies,
+        currency: action.currency,
       };
 
     default: {
