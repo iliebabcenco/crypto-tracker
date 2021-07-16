@@ -17,7 +17,7 @@ const CurrenciesContainer = () => {
   }
   return (
 
-    <div>
+    <div className="currencies-container">
       <h3>Name</h3>
       <p>Description</p>
       {currencies ? currencies.map((currency) => (
