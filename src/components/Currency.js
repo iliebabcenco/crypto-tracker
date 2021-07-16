@@ -2,31 +2,39 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-// import DetailedCurrency from '../containers/DetailedCurrency';
+import '../styles/Currency.css';
 
 const Currency = ({ currency }) => {
   const dispatch = useDispatch();
   const handleClickGotoCurrency = (currency) => dispatch({ type: 'SHOW_CURRENCY', currency });
+  console.log(currency);
   return (
-    <Link
-      to={{
-        pathname: '/currency',
-        state: {
-          currency,
-        },
-      }}
-      key={currency.name}
-      onClick={() => handleClickGotoCurrency(currency)}
-    // component={DetailedCurrency}
-    >
-      {currency.name}
-    </Link>
+    <div>
+      <img src={currency.logo_url} alt="logo" className="cur-logo" />
+      <Link
+        to={{
+          pathname: '/currency',
+          state: {
+            currency,
+          },
+        }}
+        key={currency.name}
+        onClick={() => handleClickGotoCurrency(currency)}
+      >
+        {currency.name}
+        (
+        {currency.symbol}
+        )
+      </Link>
+    </div>
   );
 };
 
 Currency.propTypes = {
   currency: PropTypes.shape({
     name: PropTypes.string.isRequired,
+    logo_url: PropTypes.string.isRequired,
+    symbol: PropTypes.string.isRequired,
   }).isRequired,
 };
 
