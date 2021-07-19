@@ -41,6 +41,7 @@ export default function currencyReducer(state = initialState, action) {
         loading: false,
         items: action.currencies,
         currency: action.currency,
+        pattern: null,
       };
 
     case CHANGE_FILTER: {
