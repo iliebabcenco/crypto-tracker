@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import '../styles/SearchForm.css';
 
 const SearchForm = () => {
   const [filter, setFilter] = useState('');
@@ -10,9 +11,8 @@ const SearchForm = () => {
     dispatch({ type: 'CHANGE_FILTER', filter });
   };
   return (
-    <div>
-      <h3>Currency searching</h3>
-      <input type="text" placeholder="search for..." onChange={(e) => handleFilterChange(e)} value={filter} />
+    <div className="search-form-div">
+      <input type="text" className="form-control me-2" placeholder="search for..." onChange={(e) => handleFilterChange(e)} value={filter} />
     </div>
   );
 };

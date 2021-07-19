@@ -1,10 +1,10 @@
-import SearchForm from './SearchForm';
+import Navbar from '../containers/Navbar';
 import Routes from '../routes/Routes';
 import '../styles/App.css';
 
 const App = () => (
   <div className="app-div">
-    <SearchForm />
+    <Navbar />
     <Routes />
   </div>
 );
