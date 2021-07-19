@@ -1,4 +1,4 @@
-.details-div {
+.currencies-container {
   margin: 4rem auto 4rem auto;
   display: flex;
   flex-direction: column;
@@ -9,24 +9,21 @@
   border-radius: 10px;
   background-color: rgba(62, 87, 104, 0.8);
   padding: 2rem;
-  font-size: larger;
 }
 
-.currency-logo {
-  width: 30%;
-  max-height: 35rem;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+.top-btn {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.goback {
-  font-size: 2rem;
+.top-btn:hover {
+  color: #c9ab81;
 }
 
-.fa-sort-down {
-  color: red;
-}
-
-.fa-caret-up {
-  color: rgb(33, 233, 33);
+.top-container-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

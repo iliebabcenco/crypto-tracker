@@ -7,9 +7,9 @@ const handleErrors = (response) => {
   return response;
 };
 
-const fetchCurrencies = () => (dispatch) => {
+const fetchCurrencies = (counter = '20') => (dispatch) => {
   dispatch(fetchCurrencyBegin());
-  return fetch('https://api.nomics.com/v1/currencies/ticker?key=d342477f6c256c4ee09e02f077b7cfdc56a55fdb&interval=1d,30d&convert=EUR&per-page=20&page=1')
+  return fetch(`https://api.nomics.com/v1/currencies/ticker?key=d342477f6c256c4ee09e02f077b7cfdc56a55fdb&interval=1d,30d&convert=EUR&per-page=${counter}&page=1`)
     .then(handleErrors)
     .then((res) => res.json())
     .then((json) => {

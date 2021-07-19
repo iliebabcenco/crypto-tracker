@@ -3,19 +3,6 @@
   position: relative;
 }
 
-.currencies-container {
-  margin: 4rem auto 4rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 70%;
-  color: white;
-  border: 1px solid #c9ab81;
-  border-radius: 10px;
-  background-color: rgba(62, 87, 104, 0.8);
-  padding: 2rem;
-}
-
 a {
   color: white;
   text-decoration: none;

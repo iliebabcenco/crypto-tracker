@@ -8,6 +8,12 @@ import CurrenciesContainer from './CurrenciesContainer';
 const DetailedCurrency = () => {
   const currency = useSelector((state) => state.currency);
   const pattern = useSelector((state) => state.pattern);
+  const upDown = (element) => {
+    if (element.split('').includes('-')) {
+      return <i className="fas fa-sort-down" />;
+    }
+    return <i className="fas fa-caret-up" />;
+  };
   if (!pattern && currency) {
     return (
       <div className="details-div">
@@ -88,13 +94,18 @@ const DetailedCurrency = () => {
             Price change
             {': '}
             {currency['1d'].price_change}
+
             {' '}
             &euro;
             (
             {currency['1d'].price_change_pct * 100}
 
             {' %'}
+
             )
+            {' '}
+            {' '}
+            {upDown(currency['1d'].price_change)}
           </li>
           <li>
             Volume
@@ -109,6 +120,8 @@ const DetailedCurrency = () => {
             {currency['1d'].volume_change_pct * 100}
             {' %'}
             )
+            {' '}
+            {upDown(currency['1d'].volume_change)}
           </li>
         </ul>
         <h3>Last 30 days information</h3>
@@ -123,12 +136,15 @@ const DetailedCurrency = () => {
             {currency['30d'].price_change_pct * 100}
             {' %'}
             )
+            {' '}
+            {upDown(currency['30d'].price_change_pct)}
           </li>
 
           <li>
             Volume
             {': '}
             {currency['30d'].volume}
+
           </li>
           <li>
             Volume change
@@ -138,6 +154,8 @@ const DetailedCurrency = () => {
             {currency['30d'].volume_change_pct * 100}
             {' %'}
             )
+            {' '}
+            {upDown(currency['30d'].volume_change_pct)}
           </li>
 
         </ul>
