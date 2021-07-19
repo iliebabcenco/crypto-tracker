@@ -11,7 +11,7 @@ const CurrenciesContainer = () => {
   }, []);
   let currencies = useSelector((state) => state.items);
   const filterPattern = useSelector((state) => state.pattern);
-  if (filterPattern) {
+  if (filterPattern && currencies) {
     currencies = currencies.filter((c) => c.name.toLowerCase().startsWith(filterPattern)
       || c.symbol.toLowerCase().startsWith(filterPattern));
   }

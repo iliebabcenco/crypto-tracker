@@ -1,19 +1,24 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import '../styles/DetailedCurrency.css';
 // eslint-disable-next-line
 import CurrenciesContainer from './CurrenciesContainer';
 
 const DetailedCurrency = () => {
   const currency = useSelector((state) => state.currency);
-  if (currency) {
+  const pattern = useSelector((state) => state.pattern);
+  if (!pattern && currency) {
     return (
-      <div>
+      <div className="details-div">
         <Link
           to="/"
         >
-          Go back
-          {' '}
+          <span className="goback">
+            <i className="fas fa-arrow-left" />
+            {' '}
+            Back
+          </span>
         </Link>
         <img className="currency-logo" src={currency.logo_url} alt="currency-logo" />
         <h3>{currency.name}</h3>
