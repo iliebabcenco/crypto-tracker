@@ -1,9 +1,10 @@
 .app-div {
   margin-bottom: 4rem;
+  position: relative;
 }
 
 .currencies-container {
-  margin: 4rem auto;
+  margin: 4rem auto 4rem auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

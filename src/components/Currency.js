@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import '../styles/Currency.css';
 
 const Currency = ({ currency }) => {
-  console.log(currency);
   const dispatch = useDispatch();
   const handleClickGotoCurrency = (currency) => dispatch({ type: 'SHOW_CURRENCY', currency });
   return (
