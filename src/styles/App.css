@@ -1,3 +1,7 @@
+.app-div {
+  margin-bottom: 4rem;
+}
+
 .currencies-container {
   margin: 4rem auto;
   display: flex;
@@ -5,15 +9,19 @@
   align-items: flex-start;
   width: 70%;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #c9ab81;
   border-radius: 10px;
-  background-color: rgba(21, 30, 36, 0.8);
+  background-color: rgba(62, 87, 104, 0.8);
   padding: 2rem;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+a:hover {
+  color: #c9ab81;
 }
 
 html,
@@ -24,6 +32,4 @@ body {
   padding: 0;
   background: url(../assets/bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  font-size: 2.2rem;
-
 }

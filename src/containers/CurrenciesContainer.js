@@ -18,8 +18,7 @@ const CurrenciesContainer = () => {
   return (
 
     <div className="currencies-container">
-      <h3>Name</h3>
-      <p>Description</p>
+      <h4>Top currencies: </h4>
       {currencies ? currencies.map((currency) => (
         <Currency key={currency.name} currency={currency} />
       )) : 'Please wait'}
