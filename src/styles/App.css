@@ -1,7 +1,10 @@
 .app-div {
-  margin-bottom: 4rem;
+  width: 100%;
+  padding-bottom: 5rem;
   position: relative;
+  min-height: 100vh;
 }
+
 
 a {
   color: white;
@@ -15,7 +18,6 @@ a:hover {
 html,
 body {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   background: url(../assets/bg.jpg) no-repeat center center fixed;
