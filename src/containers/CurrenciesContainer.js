@@ -7,7 +7,6 @@ import '../styles/CurrenciesContainer.css';
 const CurrenciesContainer = () => {
   const [counter, setCounter] = useState('100');
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchCurrencies());
   }, []);
