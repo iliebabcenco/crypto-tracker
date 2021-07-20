@@ -2,8 +2,8 @@
 
 ## Description
 
-In this app I managed to display top 100 cryptocurrencies from the world sorted by their rank.
-Also for convenient using it is possible to sort them by name and symbol using searching form on the top navbar.
+In this app, I managed to display the top 100 cryptocurrencies from the world sorted by their rank.
+Also for convenient using it is possible to sort them by name and symbol using the searching form on the top navbar.
 It has a page for analyzing information about each cryptocurrency.
 
 ## Built With
@@ -23,6 +23,8 @@ It has a page for analyzing information about each cryptocurrency.
 - Run `npm install` in your computer terminal to install dependencies (you will need Node.js installed on your machine);
 - Run `npm start` (you will need an internet browser installed on your machine);
 
+P.S. If you have any errors on `npm install` try to remove `package-lock.json` and `node_modules` if present and try again `npm install`.
+
 ## How it looks
 
 ### Main page
@@ -34,7 +36,7 @@ It has a page for analyzing information about each cryptocurrency.
 
 ## Testing
 
-This project include 8 Test Suites with 27 tests and 12 snapshots.
+This project includes 8 Test Suites with 27 tests and 12 snapshots.
 
 The tests are written with Jest, and React testing library.
 
@@ -44,7 +46,9 @@ To run tests use:
 
 ### Deployment
 
-This application is deployed on [Heroku](https://master-calc.herokuapp.com/).
+This application is deployed on Heroku.
+
+[LiveVersion](https://crypto-currencies-tracker.herokuapp.com/)
 
 ## Authors
 
