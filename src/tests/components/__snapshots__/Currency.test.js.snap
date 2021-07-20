@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays correct first child 1`] = `
+<div
+  class="currency"
+>
+  <span
+    class="currency-rank"
+  >
+    1
+  </span>
+  <img
+    alt="logo"
+    class="cur-logo"
+    src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg"
+  />
+  <a
+    href="/currency"
+  >
+    Bitcoin
+     
+    BTC
+  </a>
+</div>
+`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="currency"
+  >
+    <span
+      class="currency-rank"
+    >
+      1
+    </span>
+    <img
+      alt="logo"
+      class="cur-logo"
+      src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg"
+    />
+    <a
+      href="/currency"
+    >
+      Bitcoin BTC
+    </a>
+  </div>
+</DocumentFragment>
+`;

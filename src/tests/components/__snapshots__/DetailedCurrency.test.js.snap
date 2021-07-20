@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays correct first child 1`] = `
+<div
+  class="currencies-container"
+>
+  <div
+    class="top-container-div"
+  >
+    <h3>
+      Top
+       
+      20
+       
+      cryptocurrencies:
+    </h3>
+    <button
+      class="top-btn"
+      type="button"
+    >
+      <i
+        class="fas fa-arrow-right"
+      />
+       
+      Show top
+       
+      100
+    </button>
+  </div>
+</div>
+`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="currencies-container"
+  >
+    <div
+      class="top-container-div"
+    >
+      <h3>
+        Top 20 cryptocurrencies:
+      </h3>
+      <button
+        class="top-btn"
+        type="button"
+      >
+        <i
+          class="fas fa-arrow-right"
+        />
+         Show top 100
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

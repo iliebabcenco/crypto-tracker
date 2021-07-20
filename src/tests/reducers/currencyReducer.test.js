@@ -1,4 +1,7 @@
-import { CHANGE_FILTER, FETCH_CURRENCY_BEGIN, FETCH_CURRENCY_FAILURE, FETCH_CURRENCY_SUCCESS, SHOW_CURRENCY } from '../../actions/currencyActions';
+import {
+  CHANGE_FILTER, FETCH_CURRENCY_BEGIN, FETCH_CURRENCY_FAILURE,
+  FETCH_CURRENCY_SUCCESS, SHOW_CURRENCY,
+} from '../../actions/currencyActions';
 import currencyReducer from '../../reducers/currencyReducer';
 
 const initialState = {
@@ -6,7 +9,6 @@ const initialState = {
   loading: false,
   error: null,
 };
-
 
 describe('currencies currencyReducer', () => {
   it('returns the initial state', () => {
@@ -22,7 +24,10 @@ describe('currencies currencyReducer', () => {
   });
 
   it('handles succeeded fetch', () => {
-    expect(currencyReducer(initialState, { type: FETCH_CURRENCY_SUCCESS, currencies: [] })).toEqual({
+    expect(currencyReducer(initialState, {
+      type: FETCH_CURRENCY_SUCCESS,
+      currencies: [],
+    })).toEqual({
       ...initialState,
       loading: false,
       items: [],
@@ -30,7 +35,12 @@ describe('currencies currencyReducer', () => {
   });
 
   it('handles fetch failure', () => {
-    expect(currencyReducer(initialState, { type: FETCH_CURRENCY_FAILURE, currencies: [], payload: { error: null } })).toEqual({
+    expect(currencyReducer(initialState, {
+      type: FETCH_CURRENCY_FAILURE,
+      currencies:
+        [],
+      payload: { error: null },
+    })).toEqual({
       ...initialState,
       error: null,
       loading: false,
@@ -39,7 +49,9 @@ describe('currencies currencyReducer', () => {
   });
 
   it('handles show currency action', () => {
-    expect(currencyReducer(initialState, { type: SHOW_CURRENCY, items: [], currency: { name: 'test-currency' }, pattern: 'go' })).toEqual({
+    expect(currencyReducer(initialState, {
+      type: SHOW_CURRENCY, items: [], currency: { name: 'test-currency' }, pattern: 'go',
+    })).toEqual({
       ...initialState,
       loading: false,
       items: undefined,
@@ -51,9 +63,9 @@ describe('currencies currencyReducer', () => {
   it('handles filter action', () => {
     expect(currencyReducer(initialState, { type: CHANGE_FILTER, filter: 'gGo' })).toEqual({
       ...initialState,
-      "error": null,
-      "items": [],
-      "loading": false,
+      error: null,
+      items: [],
+      loading: false,
       pattern: 'ggo',
     });
   });
@@ -63,5 +75,4 @@ describe('currencies currencyReducer', () => {
       ...initialState,
     });
   });
-
 });

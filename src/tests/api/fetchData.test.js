@@ -23,9 +23,4 @@ describe('setup store action', () => {
       100,
     ))
     .then(() => expect((store.getActions())).toContainEqual({ type: 'FETCH_CURRENCY_BEGIN' }, { currencies: [Array], type: 'FETCH_CURRENCY_SUCCESS' })));
-  // it('is a negative test getting error for bad params', () => store
-  //   .dispatch(fetchCurrencies(
-  //     'lala',
-  //   ))
-  //   .then(() => expect((store.getActions())).toContainEqual({ "type": "FETCH_CURRENCY_BEGIN" }, { "payload": { "error": [Error] }, "type": "FETCH_CURRENCY_FAILURE" })));
 });

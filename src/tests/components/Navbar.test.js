@@ -1,20 +1,24 @@
-import fetchMock from 'jest-fetch-mock';
-import fetchCurrencies from '../../api/fetcher';
-import 'regenerator-runtime/runtime';
+import React from 'react';
+import { render, cleanup, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import Footer from '../../components/Footer';
+import store from '../../store/store';
+import Navbar from '../../containers/Navbar';
+import '@testing-library/jest-dom';
 
-fetchMock.enableMocks();
-beforeEach(() => {
-  fetch.resetMocks();
+afterEach(cleanup);
+
+it('should take a snapshot', () => {
+  const { asFragment } = render(<Provider store={store}><Navbar /></Provider>);
+  expect(asFragment(<Provider store={store}><Navbar /></Provider>)).toMatchSnapshot();
 });
 
-describe('Fetch cryptocurrencies', () => {
-  it('shouldn\'t be null', () => {
-    expect(fetchCurrencies()).not.toBeNull();
-  });
+it('displays correct first child', () => {
+  const { container } = render(<Provider store={store}><Navbar /></Provider>);
+  expect(container.firstChild).toMatchSnapshot();
+});
 
-  test('should be an actions object', () => {
-    new Promise(fetchCurrencies()).then((data) => {
-      expect(typeof data).toBe('object');
-    });
-  });
+it('negative check', () => {
+  render(<Provider store={store}><Footer /></Provider>);
+  expect(screen.queryByText('Let’s do some math!')).not.toBeInTheDocument();
 });
