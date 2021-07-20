@@ -21,6 +21,7 @@ It has a page for analyzing information about each cryptocurrency.
 - Run command `git clone git@github.com:iliebabcenco/crypto-tracker.git` which will clone the project;
 - Switch to the main directory of project using cd;
 - Run `npm install` in your computer terminal to install dependencies (you will need Node.js installed on your machine);
+- In order to use the data from api you will need to get an api key there `https://nomics.com/`;
 - Run `npm start` (you will need an internet browser installed on your machine);
 
 P.S. If you have any errors on `npm install` try to remove `package-lock.json` and `node_modules` if present and try again `npm install`.
