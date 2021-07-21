@@ -1,4 +1,4 @@
-# CryptoTracker (Catalogue of Cryptocurrencies)
+# CryptoTracker (catalogue of financial values)
 
 ## Description
 
