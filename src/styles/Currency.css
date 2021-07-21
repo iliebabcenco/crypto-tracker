@@ -20,3 +20,18 @@
   left: 2%;
   font-size: 3rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .currency {
+    font-size: 1.2rem;
+  }
+
+  .currency-rank {
+    font-size: 1.7rem;
+  }
+
+  .cur-logo {
+    width: 2rem;
+    max-height: 2rem;
+  }
+}
