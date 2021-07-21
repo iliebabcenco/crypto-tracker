@@ -1,0 +1,24 @@
+.app-div {
+  width: 100%;
+  padding-bottom: 5rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c9ab81;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(../assets/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}

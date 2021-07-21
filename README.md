@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# CryptoTracker (catalogue of financial values)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+In this app, I managed to display the top 100 cryptocurrencies from the world sorted by their rank.
+Also for convenient using it is possible to sort them by name and symbol using the searching form on the top navbar.
+It has a page for analyzing information about each cryptocurrency.
 
-In the project directory, you can run:
+## Built With
 
-### `yarn start`
+- React
+- Redux
+- JavaScript
+- HTML5/CSS3
+- Bootstrap
+- [nomics](https://nomics.com/) api
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Set up this projecect locally
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Open the terminal in the directory where you want to install the app;
+- Run command `git clone git@github.com:iliebabcenco/crypto-tracker.git` which will clone the project;
+- Switch to the main directory of project using cd;
+- Run `npm install` in your computer terminal to install dependencies (you will need Node.js installed on your machine);
+- In order to use the data from api you will need to get an api key there `https://nomics.com/`;
+- Run `npm start` (you will need an internet browser installed on your machine);
 
-### `yarn test`
+P.S. If you have any errors on `npm install` try to remove `package-lock.json` and `node_modules` if present and try again `npm install`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How it looks
 
-### `yarn build`
+### Main page
+![](src/assets/screenshots/1.png) 
+### Main page after searching
+![](src/assets/screenshots/2.png)  
+### Details page
+![](src/assets/screenshots/3.png) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Testing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project includes 8 Test Suites with 27 tests and 12 snapshots.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The tests are written with Jest, and React testing library.
 
-### `yarn eject`
+To run tests use:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`npm test`
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This application is deployed on Heroku.
 
-### `yarn build` fails to minify
+[LiveVersion](https://crypto-currencies-tracker.herokuapp.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+👤 **Ilie Babcenco**
+
+[![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iliebabcenco) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ilie-babcenco-72459a1b1/) [![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/BabcencoIlie)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+If you want to contribute, you can clone this project or fork it.
+
+If you found an issue, feel free to check the [issues page](https://github.com/iliebabcenco/crypto-tracker/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [Microverse](https://www.microverse.org/)
+- [Nomics](https://nomics.com/)

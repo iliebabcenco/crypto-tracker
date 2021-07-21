@@ -1,0 +1,11 @@
+.navbar {
+  width: 100%;
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  justify-content: space-around;
+  border-bottom: 1px solid #c9ab81;
+  background-color: rgba(21, 30, 36, 0.8);
+}

@@ -1,0 +1,37 @@
+.cur-logo {
+  width: 3rem;
+  max-height: 3rem;
+  margin-right: 0.7rem;
+}
+
+.currency {
+  border-bottom: 1px solid #c9ab81;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+  position: relative;
+}
+
+.currency-rank {
+  text-align: left;
+  position: absolute;
+  left: 2%;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .currency {
+    font-size: 1.2rem;
+  }
+
+  .currency-rank {
+    font-size: 1.7rem;
+  }
+
+  .cur-logo {
+    width: 2rem;
+    max-height: 2rem;
+  }
+}

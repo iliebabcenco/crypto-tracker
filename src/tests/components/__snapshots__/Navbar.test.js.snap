@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays correct first child 1`] = `
+<nav
+  class="navbar"
+>
+  <h1
+    class="nav-title"
+  >
+    CryptoTracker
+  </h1>
+  <div
+    class="search-form-div"
+  >
+    <input
+      class="form-control me-2"
+      placeholder="search for..."
+      type="text"
+      value=""
+    />
+  </div>
+</nav>
+`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="navbar"
+  >
+    <h1
+      class="nav-title"
+    >
+      CryptoTracker
+    </h1>
+    <div
+      class="search-form-div"
+    >
+      <input
+        class="form-control me-2"
+        placeholder="search for..."
+        type="text"
+        value=""
+      />
+    </div>
+  </nav>
+</DocumentFragment>
+`;
