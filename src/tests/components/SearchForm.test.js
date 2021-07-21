@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, cleanup, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import SearchForm from '../../components/SearchForm';
+import SearchForm from '../../containers/SearchForm';
 import store from '../../store/store';
-import Navbar from '../../containers/Navbar';
+import Navbar from '../../components/Navbar';
 import '@testing-library/jest-dom';
 
 afterEach(cleanup);

@@ -3,7 +3,7 @@ import { render, cleanup, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import CurrenciesContainer from '../../containers/CurrenciesContainer';
 import store from '../../store/store';
-import Navbar from '../../containers/Navbar';
+import Navbar from '../../components/Navbar';
 import '@testing-library/jest-dom';
 
 afterEach(cleanup);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import fetchCurrencies from '../api/fetcher';
-import Currency from '../components/Currency';
+import Currency from './Currency';
 import '../styles/CurrenciesContainer.css';
 
 const CurrenciesContainer = () => {

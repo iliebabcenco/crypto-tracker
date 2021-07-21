@@ -1,4 +1,4 @@
-import Navbar from '../containers/Navbar';
+import Navbar from './Navbar';
 import Routes from '../routes/Routes';
 import '../styles/App.css';
 import Footer from './Footer';
